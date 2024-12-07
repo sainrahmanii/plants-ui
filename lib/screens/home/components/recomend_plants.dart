@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:plant_ui/constants.dart';
+import 'package:plant_ui/screens/detail/details_screen.dart';
 
 class RecomendPlants extends StatelessWidget {
   const RecomendPlants({
@@ -17,35 +18,70 @@ class RecomendPlants extends StatelessWidget {
             title: "samantha",
             country: "indonesia",
             price: 1200,
-            press: () {},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const DetailsScreen(),
+                ),
+              );
+            },
           ),
           RecomenPlantCard(
             image: "assets/images/image_2.png",
             title: "angelica",
             country: "indonesia",
             price: 1100,
-            press: () {},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const DetailsScreen(),
+                ),
+              );
+            },
           ),
           RecomenPlantCard(
             image: "assets/images/image_3.png",
             title: "samantha",
             country: "indonesia",
             price: 1200,
-            press: () {},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const DetailsScreen(),
+                ),
+              );
+            },
           ),
           RecomenPlantCard(
             image: "assets/images/image_1.png",
             title: "samantha",
             country: "indonesia",
             price: 1200,
-            press: () {},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const DetailsScreen(),
+                ),
+              );
+            },
           ),
           RecomenPlantCard(
             image: "assets/images/image_2.png",
             title: "samantha",
             country: "indonesia",
             price: 1200,
-            press: () {},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const DetailsScreen(),
+                ),
+              );
+            },
           ),
         ],
       ),
@@ -71,7 +107,7 @@ class RecomenPlantCard extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return GestureDetector(
-      onTap: () => press,
+      onTap: () => press(),
       child: Container(
         margin: const EdgeInsets.only(
             left: kDefaultPadding,
