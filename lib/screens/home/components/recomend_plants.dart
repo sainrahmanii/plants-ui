@@ -83,6 +83,9 @@ class RecomendPlants extends StatelessWidget {
               );
             },
           ),
+          const Padding(
+            padding: EdgeInsets.only(right: kDefaultPadding),
+          )
         ],
       ),
     );

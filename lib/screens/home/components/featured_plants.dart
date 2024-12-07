@@ -20,6 +20,9 @@ class FeaturedPlants extends StatelessWidget {
             image: 'assets/images/bottom_img_2.png',
             press: () {},
           ),
+          const Padding(
+            padding: EdgeInsets.only(right: kDefaultPadding),
+          )
         ],
       ),
     );
